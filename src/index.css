@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+
+    /* User Requested Light & Rich Palette */
+    --color-ivory: #F8F6F0;
+    --color-champagne: #C5A46D;
+    --color-white: #FFFFFF;
+    --color-slate: #344454;
+    --color-grey: #737373;
+    --color-gold: #B99A62;
+    --color-gold-hover: #A88B54;
+    --color-footer: #EDEBE5;
+    --color-border: #E5DFD2;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFFFFF;
+    color: #737373;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: #344454;
+  }
+}
+
+/* Elegant Light Pattern */
+.bg-warm-ivory {
+  background-color: #F8F6F0;
+}
+
+.bg-pure-white {
+  background-color: #FFFFFF;
+}
+
+.bg-footer-beige {
+  background-color: #EDEBE5;
+}
+
+.border-soft-beige {
+  border-color: #E5DFD2;
+}
+
+.text-deep-slate {
+  color: #344454;
+}
+
+.text-soft-grey {
+  color: #737373;
+}
+
+.text-champagne-gold {
+  color: #C5A46D;
+}
+
+.bg-muted-gold {
+  background-color: #B99A62;
+}
+
+.bg-muted-gold:hover {
+  background-color: #A88B54;
+}
+
+/* Subtle clean architectural grid in soft beige */
+.bg-ivory-grid {
+  background-color: #F8F6F0;
+  background-image: 
+    linear-gradient(to right, rgba(229, 223, 210, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(229, 223, 210, 0.4) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.bg-white-subtle-grid {
+  background-image: 
+    linear-gradient(to right, rgba(229, 223, 210, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(229, 223, 210, 0.3) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Subtle gold button style */
+.btn-muted-gold {
+  background-color: #B99A62;
+  color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.btn-muted-gold:hover {
+  background-color: #A88B54;
+}
+
+.btn-outline-gold {
+  border: 1px solid #E5DFD2;
+  background-color: #FFFFFF;
+  color: #344454;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-gold:hover {
+  background-color: #F8F6F0;
+  border-color: #C5A46D;
+  color: #B99A62;
+}
+
+/* Custom scrollbar in soft beige */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5DFD2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A46D;
+}
